@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <title>Portfolio</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="mobile-menu">
+      <div class="line-top"></div>
+      <div class="line-middle"></div>
+      <div class="line-bottom"></div>
+    </div>
+    <ul class="nav-list">
+      <li><a href="#home">Início</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#about">Sobre mim</a></li>
+      <li><a href="#contact">Entre em contato</a></li>
+    </ul>
+  </nav>
+  
+  <section id="home">
+    <h1 class="heading">Igor Matheus</h1>
+  </section>
+
+  <section id="projects">
+    <h1 class="heading">Projetos</h1>
+    <div class="gallery">
+      <a href="https://github.com/mattigor/tela-de-cadastro"><img src="img_1.jpg" alt=""></a>
+      <a href="https://github.com/mattigor/tela-de-login"><img src="img_2.jpg" alt=""></a>
+      <a href="https://github.com/mattigor/Snake-Game"><img src="img_3.jpg" alt=""></a>
+      <a href="https://github.com/mattigor/Jogo-De-Clicar"><img src="img_4.jpg" alt=""></a>
+      <a href="https://github.com/mattigor/calculadora-basica"><img src="img_5.jpg" alt=""></a>
+      <a href="https://github.com/mattigor/Website"><img src="img_6.jpg" alt=""></a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h1 class="heading">Sobre mim</h1>
+    <div class="about">
+      <img src="me.jpg" alt="My Pic">
+      <div class="name">
+        <h2>Meu nome é Igor Matheus</h2>
+        <p>Em março de 2021 comecei a me interessar muito por desenvolvimento, desde então venho me aperfeiçoando através de livros e cursos livres. Tenho conhecimento básico nas principais ferramentas de Desenvolvimento Web: HTML5, CSS3 e JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h1 class="heading">Entre em contato</h1>
+    <form action="https://formspree.io/f/myyongzy" class="form" method="post">
+      <div class="container">
+        <div class="card"> 
+          <div class="label-float">
+            <input type="text" id="name" class="input" name="name" placeholder="" required>
+            <label for="name">Nome</label>
+          </div>
+          
+          <div class="label-float">
+            <input type="text" id="email" class="input" name="email" placeholder="" required>
+            <label for="email">E-mail</label>
+          </div>
+
+          <div class="label-float">
+            <textarea name="message" class="input" id="message" rows="11" placeholder="Digite sua mensagem" required></textarea>
+          </div>
+
+          <div class="justify-center">
+            <button type="submit">Enviar</button>
+          </div>
+
+        </div>
+      </div>
+    </form>
+  </section>
+  <script src="mobile-navbar.js"></script>
+</body>
+</html>
