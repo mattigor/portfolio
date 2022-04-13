@@ -6,7 +6,7 @@
   .nav-list {
     position: absolute;
     font-size: 1.1rem;
-    top: 6vh;
+    top: 8vh;
     right: 0;
     width: 50vw;
     height: 93vh;
@@ -65,8 +65,12 @@
     font-size: 2.8rem;
   }
 
-  #message {
-    width: calc(70vw);
+  .card .label-float .input {
+    width: 65vw;
+  }
+
+  .label-float #message {
+    width: 63.5vw;
   }
 }
 
@@ -84,8 +88,8 @@ html {
 
 .navbar {
   display: flex;
-  justify-content: center;
-  height: 50px;
+  justify-content: space-around;
+  height: 8vh;
   align-items: center;
   position: sticky;
   top: 0;
@@ -101,10 +105,10 @@ html {
   width: 100%;
   z-index: -1;
 }
-.nav-list {
-  display: flex;
-  list-style: none;
-
+space {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 .mobile-menu {
   cursor: pointer;
@@ -116,6 +120,10 @@ html {
   margin: 8px;
   transition: .3s;
   border-radius: 5px;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
 }
 .nav-list li {
   font-size: 1.1rem;
