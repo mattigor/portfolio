@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 /* visualização mobile */
-@media(max-width: 999px) {
+@media(max-width: 998px) {
   .nav-list {
     position: absolute;
     font-size: 1.1rem;
