@@ -1,349 +1,49 @@
-/* importação pelo Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
-/* visualização mobile */
-@media(max-width: 998px) {
-  .nav-list {
-    position: absolute;
-    font-size: 1.1rem;
-    top: 8vh;
-    right: 0;
-    width: 50vw;
-    height: 93vh;
-    background-color: #FF8B39dc;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    backdrop-filter: blur(1px);
-    transform: translateX(100%);
-    transition: transform .3s ease-in;
-    z-index: 100;
-  }
-  .nav-list li {
-    margin-left: 0;
-    opacity: 0;
-    text-transform: uppercase;
-  }
-  
-  .mobile-menu {
-    display: block;
-    padding-left: 70vw;
-  }
-
-  #home .heading {
-    font-size: 4.5rem;
-  }
-
-  #projects h1 {
-    font-size: 2.8rem;
-  }
-  #projects .gallery img {
-    width: 500px;
-    height: 750px;
-  }
-
-  #about .about {
-    display: inline-block;
-    text-align: center;
-  }
-
-  #about h1 {
-    font-size: 2.8rem;
-  }
-  #about .name {
-    padding-left: 30px;
-    width: 90%;
-  }
-  #about .name h2 {
-    font-size: 1.8rem;
-  }
-  #about .name p {
-    font-size: 1.25rem;
-  }
-
-  #contact h1 {
-    font-size: 2.8rem;
-  }
-
-  .card .label-float .input {
-    width: 65vw;
-  }
-
-  .label-float #message {
-    width: 63.5vw;
-  }
+:root {
+  --black: #000;
+  --orange: #FF8B39;
 }
 
 * {
   margin: 0;
   padding: 0;
   font-family: 'Source Code Pro', monospace;
-}
-
-html {
   scroll-behavior: smooth;
 }
-
-/* menu */
-
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  height: 8vh;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  border-bottom: 1px solid #000000dc;
-  box-shadow: 0px 1px 5px;
-}
-.navbar::before {
-  content: "";
-  position: absolute;
-  background-color: rgba(0, 0, 0, .8);
-  backdrop-filter: blur(1px);
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-}
-space {
-  font-size: 24px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-}
-.mobile-menu {
-  cursor: pointer;
-}
-.mobile-menu div {
-  width: 32px;
-  height: 2px;
-  background: white;
-  margin: 8px;
-  transition: .3s;
-  border-radius: 5px;
-}
-.nav-list {
-  display: flex;
-  list-style: none;
-}
-.nav-list li {
-  font-size: 1.1rem;
-}
-.nav-list li a {
-  padding: 5px 20px;
+a {
   text-decoration: none;
   color: white;
-  transition: all .1s;
+  display: block;
+  padding: 15px 30px;
+  transition: all 100ms ease-in-out;
 }
-.nav-list li a:hover {
-  border-bottom: 3px solid #FF8B39;
+#navbar-menu {
+  background-color: #222;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
-.nav-list.active {
-  transform: translateX(0);
+#ul-menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 50px;
+}
+.li-menu {
+  font-size: .850rem;
+  border-bottom: 2px solid #222;
+  /* margin: 0 20px 0 20px; */
+}
+.li-menu:hover {
+  background-color: var(--black);
+  border-bottom: 2px solid var(--orange);
 }
 
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
+/* media queries */
+@media (max-width: 850px) {
+  #ul-menu {
+    justify-content: center;
   }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.mobile-menu.active .line-top {
-  transform: rotate(-45deg) translate(-8px, 8px);
-}
-.mobile-menu.active .line-middle {
-  opacity: 0;
-}
-.mobile-menu.active .line-bottom {
-  transform: rotate(45deg) translate(-5px, -7px);
-}
-
-/* seção início */
-#home {
-  display: flex;
-  flex-direction: column;
-  height: 999px;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, .6);
-  color: white;
-}
-#home::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: url("bg.jpg") no-repeat center center/cover;
-  height: 1050px;
-  width: 100vw;
-  z-index: -1;
-  opacity: .8;
-}
-.heading {
-  color: white;
-  font-size: 4rem;
-  text-align: center;
-}
-#home h1 {
-  font-size: 6rem;
-  text-transform: uppercase;
-}
-#home p {
-  font-size: 1.5rem;
-}
-
-/* seção projetos */
-#projects {
-  padding-top: 50px;
-  display: flex;
-  flex-direction: column;
-  background-color: #000000dc;
-}
-#projects h1 {
-  margin: 60px;
-}
-.gallery {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.gallery img {
-  width: 650px;
-  height: 950px;
-  padding: 3px;
-  transition: all .3s ease-out;
-  margin: 20px 20px 20px 20px;
-}
-.gallery img:hover {
-  background-color: #FF8B39;
-  cursor: pointer;
-}
-
-/* seção sobre mim */
-#about {
-  padding-top: 50px;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  background-color: #000000dc;
-}
-
-#about h1 {
-  color: white;
-  margin: 55px;
-}
-
-.about {
-  display: flex;
-  justify-content: center;
-  flex-direction: row-reverse;
-}
-
-.about img {
-  width: 370px;
-  height: 430px;
-  padding: 0px 30px;
-}
-.name {
-  color: white;
-  padding: 10px;
-  width: 30vw;
-}
-.name h2 {
-  font-size: 2.5rem;
-}
-.name p {
-  padding-top: 15px;
-  font-size: 1.5rem;
-}
-
-/* seção entre em contato */
-#contact {
-  padding-top: 50px;
-  display: flex;
-  flex-direction: column;
-  height: 150vh;
-  background-color: white;
-}
-#contact h1 {
-  margin: 50px;
-  color: black;
-}
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.container {
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-}
-.label-float .input {
-  width: 400px;
-  padding: 5px;
-  display: inline-block;
-  border: 0;
-  border-bottom: 2px solid black;
-  background-color: transparent;
-  outline: none;
-  min-width: 180px;
-  font-size: 1.2rem;
-  transition: all .3s ease-out;
-  border-radius: 0;
-}
-.label-float {
-  font-size: 1.2rem;
-  position: relative;
-  padding-top: 13px;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-.label-float label {
-  color: black;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: all 120ms ease-out;
-  margin-top: 13px;
-}
-.label-float input:focus ~ label,
-.label-float input:valid ~ label {
-  font-size: .8rem;
-  margin-top: 0;
-}
-
-#message {
-  padding-top: 10px;
-  padding-left: 10px;
-  width: 396px;
-  border: 2px solid black;
-  font-size: 1.2rem;
-  outline: none;
-}
-
-[type=submit] {
-  background-color: black;
-  color: white;
-  padding: 20px;
-  font-size: 1.2rem;
-  margin-top: 20px;
-  cursor: pointer;
-  outline: none;
-  transition: all 150ms ease-out;
-  outline: none;
-  border: none;
-  width: 200px;
-}
-button:hover {
-  background-color: #FF8B39;
-}
-.justify-center {
-  display: flex;
-  justify-content: center;
 }
