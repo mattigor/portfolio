@@ -11,75 +11,39 @@
   <title>Portfolio</title>
 </head>
 <body>
-  <nav class="navbar">
-    <h1 class="space"></h1>
-    <div class="mobile-menu">
-      <div class="line-top"></div>
-      <div class="line-middle"></div>
-      <div class="line-bottom"></div>
-    </div>
-    <ul class="nav-list">
-      <li><a href="#home">Início</a></li>
-      <li><a href="#projects">Projetos</a></li>
-      <li><a href="#about">Sobre mim</a></li>
-      <li><a href="#contact">Contato</a></li>
-    </ul>
-  </nav>
-  
+  <header>
+    <nav id="navbar-menu">
+      <ul id="ul-menu">
+        <li><a href="#home" class="li-menu">Início</a></li>
+        <li><a href="#projects" class="li-menu">Projetos</a></li>
+        <li><a href="#about" class="li-menu">Sobre mim</a></li>
+        <li><a href="#contact" class="li-menu">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
   <section id="home">
-    <h1 class="heading">Igor Matheus</h1>
+    <article id="article-home"></article>
   </section>
-
   <section id="projects">
-    <h1 class="heading">Projetos</h1>
-    <div class="gallery">
-      <a href="https://github.com/mattigor/tela-de-cadastro"><img src="img_1.jpg" alt=""></a>
-      <a href="https://github.com/mattigor/tela-de-login"><img src="img_2.jpg" alt=""></a>
-      <a href="https://github.com/mattigor/Snake-Game"><img src="img_3.jpg" alt=""></a>
-      <a href="https://github.com/mattigor/Jogo-De-Clicar"><img src="img_4.jpg" alt=""></a>
-      <a href="https://github.com/mattigor/calculadora-basica"><img src="img_5.jpg" alt=""></a>
-      <a href="https://github.com/mattigor/Website"><img src="img_6.jpg" alt=""></a>
-    </div>
+    <article id="article-projects"></article>
   </section>
-
   <section id="about">
-    <h1 class="heading">Sobre mim</h1>
-    <div class="about">
-      <img src="me.jpg" alt="My Pic">
-      <div class="name">
-        <h2>Meu nome é Igor Matheus</h2>
-        <p>Em março de 2021 comecei a me interessar muito por desenvolvimento, desde então venho me aperfeiçoando através de livros e cursos livres. Tenho conhecimento básico nas principais ferramentas de Desenvolvimento Web: HTML5, CSS3 e JavaScript.</p>
-      </div>
-    </div>
+    <article id="article-about"></article>
   </section>
-
   <section id="contact">
-    <h1 class="heading">Entre em contato</h1>
-    <form action="https://formspree.io/f/myyongzy" class="form" method="post">
-      <div class="container">
-        <div class="card"> 
-          <div class="label-float">
-            <input type="text" id="name" class="input" name="name" placeholder="" required>
-            <label for="name">Nome</label>
-          </div>
-          
-          <div class="label-float">
-            <input type="text" id="email" class="input" name="email" placeholder="" required>
-            <label for="email">E-mail</label>
-          </div>
-
-          <div class="label-float">
-            <textarea name="message" class="input" id="message" rows="11" placeholder="Digite sua mensagem" required></textarea>
-          </div>
-
-          <div class="justify-center">
-            <button type="submit">Enviar</button>
-          </div>
-
-        </div>
-      </div>
-    </form>
+    <article id="article_contact">
+      <!-- <h1>Entre em contato</h1>
+      <form action="https://formspree.io/f/myyongzy" class="form" method="post">
+        <label for="name">Nome</label><br/>
+        <input type="text" id="name" class="input" name="name" placeholder="" required><br/>
+        <label for="email">E-mail</label><br/>
+        <input type="text" id="email" class="input" name="email" placeholder="" required><br/>
+        <label for="message">Mensagem</label><br/>
+        <textarea name="message" class="input" id="message" rows="11" placeholder="Digite sua mensagem" required></textarea><br/>
+        <button type="submit">Enviar</button>
+      </form> -->
+    </article>
   </section>
-  <script src="mobile-navbar.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
