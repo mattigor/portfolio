@@ -45,5 +45,6 @@ a {
 @media (max-width: 850px) {
   #ul-menu {
     justify-content: center;
+    margin-right: 0;
   }
 }
