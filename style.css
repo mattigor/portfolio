@@ -19,15 +19,14 @@
 a {
   text-decoration: none;
   color: white;
-
-  transition: all 100ms ease-in-out;
 }
 #navbar-menu {
+  display: sticky;
   background-color: var(--dark-grey);
   width: 100%;
   z-index: 999;
   position: fixed;
-  padding: 15px;
+  padding: 14.4px;
 }
 #ul-menu {
   list-style-type: none;
@@ -38,8 +37,8 @@ a {
 }
 .li-menu {
   font-size: .850rem;
-  border-bottom: 2px solid var(--dark-grey);
   padding: 18px 25px 13px 25px;
+
 }
 #li-menu-home:hover {
   background-color: var(--darker-grey);
