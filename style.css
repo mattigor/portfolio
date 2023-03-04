@@ -116,4 +116,7 @@ a {
     justify-content: center;
     margin-right: 0;
   }
+  .li-menu {
+    padding: 18px 18px 13px 18px;
+  }
 }
