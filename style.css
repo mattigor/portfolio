@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 :root {
-  --black: #000;
-  --orange: #FF8B39;
+  --darker-grey: #111;
+  --dark-grey: #222;
+  --yellow: #FE3;
+  --green: #2A6;
+  --blue: #0AF;
+  --orange: #F83;
 }
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Source Code Pro', monospace;
+  box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: 'Source Code Pro', monospace;
 }
 a {
   text-decoration: none;
@@ -19,28 +24,77 @@ a {
   transition: all 100ms ease-in-out;
 }
 #navbar-menu {
-  background-color: #222;
-  position: fixed;
+  display: sticky;
+  background-color: var(--dark-grey);
   width: 100%;
   z-index: 999;
+  position: fixed;
 }
 #ul-menu {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: right;
-  margin-right: 50px;
+  margin-right: 10vw;
 }
 .li-menu {
   font-size: .850rem;
-  border-bottom: 2px solid #222;
+  border-bottom: 2px solid var(--dark-grey);
   /* margin: 0 20px 0 20px; */
 }
-.li-menu:hover {
-  background-color: var(--black);
+#li-menu-home:hover {
+  background-color: var(--darker-grey);
+  border-bottom: 2px solid var(--yellow);
+}#li-menu-about:hover {
+  background-color: var(--darker-grey);
+  border-bottom: 2px solid var(--green);
+}#li-menu-projects:hover {
+  background-color: var(--darker-grey);
+  border-bottom: 2px solid var(--blue);
+}#li-menu-contact:hover {
+  background-color: var(--darker-grey);
   border-bottom: 2px solid var(--orange);
 }
-
+/* home */
+#home {
+  font-size: 45pt;
+  font-weight: bolder;
+  height: 100vh;
+  background-color: var(--yellow);
+  display: grid;
+  place-content: center;
+  align-content: center;
+}
+/* about */
+#about {
+  font-size: 45pt;
+  font-weight: bolder;
+  height: 100vh;
+  background-color: var(--green);
+  display: grid;
+  place-content: center;
+  align-content: center;
+}
+/* projects */
+#projects {
+  font-size: 45pt;
+  font-weight: bolder;
+  height: 100vh;
+  background-color: var(--blue);
+  display: grid;
+  place-content: center;
+  align-content: center;
+}
+/* contact */
+#contact {
+  font-size: 45pt;
+  font-weight: bolder;
+  height: 100vh;
+  background-color: var(--orange);
+  display: grid;
+  place-content: center;
+  align-content: center;
+}
 /* media queries */
 @media (max-width: 850px) {
   #ul-menu {
