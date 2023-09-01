@@ -19,8 +19,8 @@
   -webkit-font-smoothing: antialiased;
 }
 ::selection {
-    background: white;
-    color: var(--dark-grey);
+  background: white;
+  color: var(--dark-grey);
 }
 /* navigation bar */
 a {
@@ -44,10 +44,20 @@ a {
 }
 .li-menu {
   font-size: .850rem;
-  margin: 0 30px 0 30px;
+  padding: 18px 25px 13px 25px;
 }
-.li-menu:hover {
-  color: #AAA;
+#li-menu-home:hover {
+  background-color: var(--darker-grey);
+  border-bottom: 2px solid var(--grey);
+}#li-menu-about:hover {
+  background-color: var(--darker-grey);
+  border-bottom: 2px solid var(--green);
+}#li-menu-projects:hover {
+  background-color: var(--darker-grey);
+  border-bottom: 2px solid var(--blue);
+}#li-menu-contact:hover {
+  background-color: var(--darker-grey);
+  border-bottom: 2px solid var(--yellow);
 }
 /* home */
 #home {
@@ -109,7 +119,6 @@ a {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   text-align: justify;
-  hyphens: auto;
 }
 /* projects */
 #projects {
@@ -194,7 +203,7 @@ a {
     margin-bottom: 40px;
   }
   #about p {
-    font-size: 11pt;
+    font-size: 12pt;
   }
   .left-and-right {
     display: flex;
