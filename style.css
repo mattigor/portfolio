@@ -119,6 +119,10 @@ a {
   font-weight: 400;
   text-align: justify;
 }
+.left-and-right p::selection {
+  background-color: var(--dark-grey);
+  color: #FFF;
+}
 /* projects */
 #projects {
   font-size: 45pt;
