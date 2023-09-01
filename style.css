@@ -85,6 +85,10 @@ a {
   font-weight: 400;
   z-index: 1;
 }
+#home h1, p {
+  padding: 0 10px 0 10px;
+  transition: 5s;
+}
 .background-video {
   position: fixed;
   width: 100%;
