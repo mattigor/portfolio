@@ -1,6 +1,6 @@
 function changeBackgroundColor() {
   const headingHome = document.getElementById("heading-home");
-  const occupationHome = documnent.getElementById("occupation-home");
+  const occupationHome = document.getElementById("occupation-home");
   headingHome.style.backgroundColor = "#FFF";
   headingHome.style.color = "#222";
   occupationHome.style.backgroundColor = "#FFF";
