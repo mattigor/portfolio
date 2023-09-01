@@ -197,6 +197,9 @@ a {
   #about img {
     margin-bottom: 40px;
   }
+  #about p {
+    font-size: 11pt;
+  }
   .left-and-right {
     display: flex;
     flex-direction: column;
@@ -219,5 +222,8 @@ a {
   }
   #home p {
     letter-spacing: 5.5px;
+  }
+  #about p {
+    font-size: 10pt;
   }
 }
