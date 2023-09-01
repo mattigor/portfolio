@@ -110,11 +110,11 @@ a {
   width: 700px;
 }
 .left-and-right p {
-  font-size: 13pt;
+  font-size: 14pt;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   text-align: justify;
-  word-break: break-all;
+  hyphens: auto;
 }
 /* projects */
 #projects {
