@@ -15,7 +15,6 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   max-width: 100%;
-  overflow-x: hidden;
   font-family: 'Source Code Pro', monospace;
   -webkit-font-smoothing: antialiased;
 }
