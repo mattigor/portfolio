@@ -114,6 +114,7 @@ a {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   text-align: justify;
+  word-break: break-all;
 }
 /* projects */
 #projects {
