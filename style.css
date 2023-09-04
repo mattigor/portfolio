@@ -80,7 +80,7 @@ a {
   padding: 0 0 15px 0;
   z-index: 1;
 }
-#home h1, p {
+#home h1, #home p {
   padding: 0 10px 0 10px;
   transition: 5s;
 }
