@@ -62,7 +62,7 @@ a {
   place-content: center;
   align-content: center;
 }
-#home h1 {
+#heading-home {
   font-size: 100pt;
   font-family: Arial;
   -webkit-text-stroke: 4px #FFF;
@@ -70,18 +70,18 @@ a {
   font-weight: 600;
   z-index: 1;
 }
-#home p {
+#occupation-home {
   text-align: center;
   font-size: 20pt;
   font-family: Arial;
   color: white;
   letter-spacing: 15px;
   font-weight: 400;
-  padding: 0 0 15px 0;
+  padding: 50px;
   z-index: 1;
 }
 #home h1, #home p {
-  padding: 0 10px 0 10px;
+  padding: 0 10px 15px 10px;
   transition: 5s;
 }
 .background-video {
@@ -128,17 +128,60 @@ a {
   font-size: 45pt;
   font-weight: bolder;
   height: 100vh;
-  background-color: var(--blue);
+  background-color: rgba(255, 255, 255, .9);
+}
+#projects-header {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+#projects-header h1 {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 0 100px 0;
+  font-size: 23pt;
+}
+#projects-header h1::selection {
+  background-color: var(--dark-grey);
+  color: #FFF;
+}
+#article-projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0 100px 0;
+}
+.project {
   display: grid;
   place-content: center;
-  align-content: center;
+  height: 200px;
+  width: 200px;
+  font-size: 60pt;
+  font-weight: 200;
+  background-color: var(--dark-grey);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .4);
+  margin: 50px 50px 50px 50px;
+  transition: .3s;
+  cursor: pointer;
+  color: #FFF;
+}
+.project:hover {
+  transform: scale(1.5);
+}
+.project img {
+  opacity: 95%;
+}
+.project img:hover {
+  opacity: 100%;
 }
 /* contact */
 #contact {
   font-size: 45pt;
   font-weight: bolder;
   height: 100vh;
-  background-color: var(--yellow);
+  background-color: #FFF;
   display: grid;
   place-content: center;
   align-content: center;
@@ -184,6 +227,9 @@ a {
   }
   #home p {
     font-size: 14pt;
+  }
+  #projects {
+    height: auto;
   }
 }
 @media (max-width: 850px) {
