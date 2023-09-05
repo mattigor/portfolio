@@ -119,6 +119,7 @@ a {
   font-size: 14pt;
   font-weight: 400;
   text-align: justify;
+  hyphens: auto;
 }
 .left-and-right p::selection {
   background-color: var(--dark-grey);
@@ -222,6 +223,7 @@ a {
   display: flex;
   justify-content: center;
   width: 100vw;
+  padding: 30px;
 }
 .label-float {
   font-size: 1.1rem;
@@ -331,9 +333,6 @@ a {
   #home p {
     font-size: 14pt;
   }
-  #projects {
-    height: auto;
-  }
 }
 @media (max-width: 850px) {
   #ul-menu {
@@ -364,6 +363,9 @@ a {
     margin: 100px;
     height: 500px;
     width: auto;
+  }
+  #projects {
+    height: 150vh;
   }
 }
 @media (max-width: 550px) {
