@@ -225,6 +225,9 @@ a {
   width: 100vw;
   padding: 30px;
 }
+.card {
+  width: 395px;
+}
 .label-float {
   font-size: 1.1rem;
   position: relative;
