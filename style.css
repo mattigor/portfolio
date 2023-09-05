@@ -196,7 +196,7 @@ a {
 }
 #contact-header h1 {
   font-size: 23pt;
-  margin: 0 0 30px 0;
+  margin: 0 0 27px 0;
 }
 #contact-header h1::selection {
   background-color: var(--dark-grey);
@@ -223,7 +223,7 @@ a {
   display: flex;
   justify-content: center;
   width: 100vw;
-  padding: 30px;
+  padding: 0 30px 0 30px;
 }
 .card {
   width: 395px;
