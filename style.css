@@ -230,7 +230,7 @@ a {
   margin: 0 0 3% 0;
 }
 .label-float .input {
-  width: 400px;
+  width: 100%;
   padding: 5px;
   display: inline-block;
   border: 0;
@@ -264,7 +264,7 @@ a {
 #message {
   padding: 10px;
   margin: 25px 0 0 0;
-  max-width: 100%;
+  width: 100%;
   border: 2px solid black;
   font-size: 14pt;
   outline: none;
@@ -274,7 +274,7 @@ a {
   color: white;
   padding: 20px;
   font-size: 1.2rem;
-  margin-top: 20px;
+  margin-top: 30px;
   cursor: pointer;
   outline: none;
   transition: all 150ms ease-out;
