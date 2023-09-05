@@ -226,7 +226,7 @@ a {
   width: 100%;
 }
 .card {
-  width: 395px;
+  width: 100%;
 }
 .label-float {
   font-size: 1.1rem;
@@ -388,4 +388,7 @@ a {
   #about p {
     font-size: 10pt;
   }
+  .card {
+  width: 85%;
+}
 }
