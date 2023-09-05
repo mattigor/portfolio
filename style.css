@@ -365,7 +365,7 @@ a {
     width: auto;
   }
   #projects {
-    height: 150vh;
+    height: 170vh;
   }
 }
 @media (max-width: 550px) {
