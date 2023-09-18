@@ -377,6 +377,9 @@ a {
   .project:hover {
     transform: none;
   }
+  #article-contact {
+    margin-top: 30px;
+  }
 }
 @media (max-width: 550px) {
   #home h1 {
@@ -396,6 +399,6 @@ a {
     font-size: 10pt;
   }
   .card {
-  width: 85%;
+    width: 85%;
   }
 }
