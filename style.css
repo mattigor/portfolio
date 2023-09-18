@@ -370,6 +370,13 @@ a {
   #projects {
     height: 170vh;
   }
+  .project {
+    height: 150px;
+    width: 150px;
+  }
+  .project:hover {
+    transform: none;
+  }
 }
 @media (max-width: 550px) {
   #home h1 {
@@ -390,5 +397,5 @@ a {
   }
   .card {
   width: 85%;
-}
+  }
 }
