@@ -132,6 +132,7 @@ a {
   font-size: 45pt;
   font-weight: bolder;
   height: 100vh;
+  max-height: 100%;
   background-color: rgba(255, 255, 255, .9);
 }
 #projects-header {
