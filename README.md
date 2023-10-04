@@ -1,6 +1,6 @@
 ## Projeto Portfolio
 
-> Status: Em andamento
+> Status: Em constante evolução
 
 ## Sobre o projeto
 
