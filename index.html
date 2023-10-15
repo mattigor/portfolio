@@ -9,34 +9,45 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <title>Portfolio</title>
 </head>
 <body>
-  <header>
-    <nav id="navbar-menu">
-      <ul id="ul-menu">
-        <li><a href="#home" class="li-menu" id="li-menu-home">início</a></li>
-        <li><a href="#about" class="li-menu" id="li-menu-about">sobre</a></li>
-        <li><a href="#projects" class="li-menu" id="li-menu-projects">projetos</a></li>
-        <li><a href="#contact" class="li-menu" id="li-menu-contact">contato</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <div class="nav-container" onclick="rotateBars(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </label>
+    <label class="logo">
+      <a href="https://twitter.com/28mattigor">
+        <img src="./logo_igor.png" alt="Logo">
+      </a>
+    </label>
+    <ul id="ul-menu">
+      <li><a href="#home" class="li-menu" id="li-menu-home">início</a></li>
+      <li><a href="#about" class="li-menu" id="li-menu-about">sobre</a></li>
+      <li><a href="#projects" class="li-menu" id="li-menu-projects">projetos</a></li>
+      <li><a href="#contact" class="li-menu" id="li-menu-contact">contato</a></li>
+    </ul>
+  </nav>
   <section id="home">
-    <video autoplay loop muted plays-inline class="background-video">
-      <source src="./video_grey_smoke.mp4" type="video/mp4">
-    </video>
     <article id="article-home">
       <h1 id="heading-home">IGOR MATHEUS</h1>
       <p id="occupation-home">Desenvolvedor iniciante</p>
+      <a href="./cv_igor_matheus.pdf" rel="noopener noreferrer" target="_blank">
+        <input type="button" value="Download CV">
+      </a>
     </article>
   </section>
   <section id="about">
     <div class="left-and-right">
-      <img src="./foto_igor.jpg" alt="Photo of me">
+      <img src="./foto-igor.jpg" alt="Photo of me">
       <article id="article-about">
-        <p>Em 2021 comecei a me interessar por desenvolvimento, desde então venho me aperfeiçoando através de livros e cursos livres. Tenho conhecimento básico nas principais ferramentas de Desenvolvimento Web: HTML5, CSS3 e JavaScript. Atualmente estou cursando Análise e Desenvolvimento de Sistemas na UNINTER e trabalhando como Assistente de TI Júnior no Colégio Ser!.</p>
+        <p>Em 2021 comecei a me interessar por desenvolvimento, desde então venho me aperfeiçoando através de livros e cursos livres. Tenho conhecimento básico nas principais ferramentas de Desenvolvimento Web: HTML5, CSS3 e JavaScript. Atualmente estou no terceiro semestre do curso de Análise e Desenvolvimento de Sistemas na UNINTER.</p>
       </article>
     </div>
   </section>
@@ -48,8 +59,10 @@
       <a href="https://github.com/mattigor/website_alimentacao" class="project" rel="noopener noreferrer" target="_blank">
         <img src="./projeto-1.png" alt="First project">
       </a>
-      <a class="project" rel="noopener noreferrer" target="_blank" onclick="window.alert('Por enquanto não há nada para mostrar aqui.')">?</a>
-      <a class="project" rel="noopener noreferrer" target="_blank" onclick="window.alert('Aqui também não.')">?</a>
+      <a href="https://github.com/mattigor/malignants_website" class="project" rel="noopener noreferrer" target="_blank">
+        <img src="./projeto-2.png" alt="Second project">
+      </a>
+      <a class="project" rel="noopener noreferrer" target="_blank" onclick="window.alert('Ainda não há nada aqui')">?</a>
     </article>
   </section>
   <section id="contact">
@@ -79,7 +92,9 @@
     </form>
     </article>
   </section>
-  <footer></footer>
+  <footer>
+    <p>&copy; Copyright - Igor Matheus</p>
+  </footer>
   <a href="#home">
     <button id="back-to-top">
       <span>➤</span>
