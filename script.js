@@ -1,10 +1,22 @@
-function changeBackgroundColor() {
-  const headingHome = document.getElementById("heading-home");
-  const occupationHome = document.getElementById("occupation-home");
-  headingHome.style.backgroundColor = "#FFF";
-  headingHome.style.color = "#222";
-  occupationHome.style.backgroundColor = "#FFF";
-  occupationHome.style.color = "#222";
-}
+function atualizarLinkAtivo() {
+  const links = document.querySelectorAll('nav ul li a');
 
-setTimeout(changeBackgroundColor, 4000);
+  links.forEach((link) => {
+      const sectionId = link.getAttribute('href').substring(1);
+      const section = document.getElementById(sectionId);
+      if (
+          section.offsetTop <= window.scrollY &&
+          section.offsetTop + section.offsetHeight > window.scrollY
+      ) {
+          link.classList.add('ativo');
+      } else {
+          link.classList.remove('ativo');
+      }
+  });
+}
+window.addEventListener('scroll', atualizarLinkAtivo);
+window.addEventListener('load', atualizarLinkAtivo);
+
+function rotateBars(bar) {
+    bar.classList.toggle("change");
+}
